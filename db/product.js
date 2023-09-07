@@ -5,7 +5,7 @@ const userSchema=new mongoose.Schema({
     price:String,
     category:String,
     userId:String,
-    company:String
+    votes:{type:Number, defaultValue:0}
 });
 
-module.exports=mongoose.model("products",userSchema);
+module.exports=mongoose.model("candidates",userSchema);
